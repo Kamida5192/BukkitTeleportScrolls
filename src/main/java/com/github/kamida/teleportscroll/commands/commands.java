@@ -15,12 +15,20 @@ public class commands implements CommandExecutor {
         if (command.getName().equalsIgnoreCase("telescroll")) {
             if (args.length >= 1) {
                 if (args[0].equalsIgnoreCase("give")) {
+                    if (!player.hasPermission("telescroll.give")) {
+                        sender.sendMessage("You do not have the permission telescroll.give");
+                        return true;
+                    }
+
                     if (!(sender instanceof Player)) {
                         sender.sendMessage("Only players can use that command!");
                         return true;
-                    } else if (Integer.parseInt(args[1]) > 0) {
-                        for (int i = 0; i < Integer.valueOf(args[1]) - 1; i++) {
-                            player.getInventory().addItem(itemManager.scroll);
+
+                    } else if (args.length > 1) {
+                        if (Integer.parseInt(args[1]) > 0) {
+                            for (int i = 0; i < Integer.valueOf(args[1]); i++) {
+                                player.getInventory().addItem(itemManager.scroll);
+                            }
                         }
                     } else {
                         player.sendMessage("Invalid Amount");

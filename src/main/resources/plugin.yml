@@ -8,4 +8,4 @@ description: Craftable scroll that when used, teleports the user to their bed or
 commands:
   telescroll:
     description: Gives the player a scroll
-    usage: /telescroll give <amount>
+    usage: /telescroll help
