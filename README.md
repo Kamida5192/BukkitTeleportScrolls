@@ -1,4 +1,4 @@
-# Teleport Scroll (TelleScroll)
+# Teleport Scroll (TeleScroll)
 ## Install
 Created for Minecraft version 1.19.2 Bukkit.
 Drag and drop into plugins folder. No options to configure.
