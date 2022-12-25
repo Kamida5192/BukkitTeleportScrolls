@@ -36,7 +36,7 @@ public class commands implements CommandExecutor {
                 } else if (args[0].equalsIgnoreCase("help")) {
                     player.sendMessage("Usage: /telescrolls give <amount>");
                 } else if (args[0].equalsIgnoreCase("version")) {
-                    player.sendMessage("Version 0.1 created by Kamida#5192");
+                    player.sendMessage("Version 0.3 created by Kamida#5192");
                 }
             } else {
                 player.sendMessage("Usage: /telescrolls give <amount>");
