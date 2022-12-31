@@ -1,6 +1,6 @@
 # Teleport Scroll (TeleScroll)
 ## Install
-Created for Minecraft version 1.19.2 Bukkit.
+Created for Minecraft version 1.19.X Bukkit.
 Drag and drop into plugins folder. No options to configure.
 
 ## Crafting Recipe 
@@ -15,7 +15,8 @@ Right-click the scroll to teleport to your bed. If your bed isn't available, it 
 Use /telescroll give <amount> to get scrolls.
 
 ## Permissions
-**telescroll.give** - to allow users to use /telescroll give <amount>
+**telescroll.give** - allow users to use /telescroll give <amount>
+**telescroll.craft** - allow players to craft the scroll (Version 0.5)
 
 ## Issues and Sugggestions
 Please submit an issue with the error or suggestion.
