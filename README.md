@@ -16,6 +16,7 @@ Use /telescroll give <amount> to get scrolls.
 
 ## Permissions
 **telescroll.give** - allow users to use /telescroll give <amount>
+  
 **telescroll.craft** - allow players to craft the scroll (Version 0.5) - This permission is given automatically to all players by default
 
 ## Issues and Sugggestions
