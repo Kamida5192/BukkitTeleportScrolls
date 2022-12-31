@@ -9,3 +9,11 @@ commands:
   telescroll:
     description: Gives the player a scroll
     usage: /telescroll help
+
+permissions:
+  telescroll.give:
+    description: Allows the player to use /telescroll give <amount>
+    default: op
+  telescroll.craft:
+    description: Allows player to craft the teleport scroll
+    default: not op

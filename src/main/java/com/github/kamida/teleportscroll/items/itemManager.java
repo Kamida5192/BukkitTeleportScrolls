@@ -21,6 +21,10 @@ public class itemManager {
 
     public static void init() { createScroll(); }
 
+    public static ItemMeta getScrollMeta() {
+        return scroll.getItemMeta();
+    }
+
     private static void createScroll() {
         ItemStack item = new ItemStack(Material.PAPER, 1);
         ItemMeta meta = item.getItemMeta();

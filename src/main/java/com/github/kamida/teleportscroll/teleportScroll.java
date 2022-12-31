@@ -1,6 +1,7 @@
 package com.github.kamida.teleportscroll;
 
 import com.github.kamida.teleportscroll.commands.commands;
+import com.github.kamida.teleportscroll.events.craftEvent;
 import com.github.kamida.teleportscroll.events.teleportEvent;
 import com.github.kamida.teleportscroll.items.itemManager;
 import org.bukkit.Bukkit;
@@ -24,6 +25,7 @@ public final class teleportScroll extends JavaPlugin {
         itemManager.init();
         getCommand("telescroll").setExecutor(new commands());
         getServer().getPluginManager().registerEvents(new teleportEvent(), this);
+        getServer().getPluginManager().registerEvents(new craftEvent(), this);
     }
 
     @Override
